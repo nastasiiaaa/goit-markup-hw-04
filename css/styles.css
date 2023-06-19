@@ -198,10 +198,11 @@ img {
 /* ---------------PRINCIPLES-------------- */
 
 .principles {
-  padding: 120px 0;
 }
 
 .container-princeples {
+  padding-top: 120px;
+  padding-bottom: 120px;
   /* display: flex; */
 }
 
@@ -216,26 +217,27 @@ img {
 }
 
 .principles-item {
-  /* width: calc((100% – 72px) / 4);
+  /* width: calc((100% – 72px) / 4); */
   /* width: 264px; */
-  height: 112px; */
+  height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   align-content: center;
 }
 
-.principles-item-icons{
-   display: flex;
+.principles-item-icons {
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   width: 264px;
   background-color: #f4f4fd;
   border-radius: 4px;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
 }
 .principles-icon {
- 
+  width: 60px;
+  height: 64px;
 }
 
 .principles-item-title {
@@ -261,6 +263,7 @@ img {
 /* ---------------ABOUT-------------- */
 
 .about {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -313,7 +316,7 @@ img {
 .team-item {
   background-color: #ffffff;
   width: calc((100% - 24px * 3) / 4);
-  height: 380px;
+  height: 428px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -372,6 +375,10 @@ img {
 
 .workers-soc-link:is(:hover, :focus) {
   background-color: #404bbf;
+}
+.workers-soc-icon {
+  width: 16px;
+  height: 16px;
 }
 
 /*---------------CUSTOMERS----------*/
@@ -433,13 +440,20 @@ img {
   padding: 100px 0;
 }
 
+.footer-logotype {
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+}
+
+.footer-logo-part {
+  margin-right: 120px;
+}
+
 .part-logo-footer {
   color: #f4f4fd;
   font-family: "Raleway", sans-serif;
   line-height: 1.17;
-}
-
-.footer-link {
 }
 
 .footer-text {
@@ -450,6 +464,53 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   margin-top: 17.5px;
+}
+
+.footer-social-part .footer-social-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  margin-left: 120px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-social-part .footer-social-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 120px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-social-item .footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-link > .footer-social-icons {
+  fill: var(--footer-logo-color);
+}
+
+.footer-social-icons {
+  width: 24px;
+  height: 24px;
 }
 
 /* ---------------PORTFOLIO------------ */
@@ -468,12 +529,11 @@ img {
 
 .menu-list {
   display: flex;
-  margin-bottom: 72px;
-  gap: 24px;
   justify-content: center;
-}
-
-.list {
+  gap: 24px;
+  margin: 0;
+  margin-bottom: 72px;
+  list-style: none;
 }
 
 .menu-item {
@@ -496,14 +556,22 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .menu-btn:hover {
+  padding: 12px 24px;
   border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .menu-btn:focus {
+  padding: 12px 24px;
   border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .menu-btn:is(:hover, :focus) {
@@ -517,6 +585,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  row-gap: 48px;
+  padding: 0;
+  margin-bottom: 0;
+  justify-content: center;
+  list-style: none;
 }
 
 .apps-item {
@@ -545,4 +618,18 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
+}
+
+.apps-link {
+  text-decoration: none;
+  display: block;
+}
+.apps-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.apps-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
