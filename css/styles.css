@@ -454,10 +454,12 @@ img {
   align-items: baseline;
   text-align: left;
   margin-right: 120px;
+  margin-bottom: 16px;
 }
 
 .footer-logo-part {
   margin-right: 120px;
+  margin-bottom: 16px;
 }
 
 .part-logo-footer {
@@ -486,6 +488,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-right: 120px;
 }
 
 .footer-social-part .footer-social-list {
