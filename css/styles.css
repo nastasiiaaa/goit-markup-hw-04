@@ -4,6 +4,7 @@
   --btn-color: #404bbf;
   --text-color: #434455;
   --back-btn-portfolio: #f4f4fd;
+  --cust-color: #8e8f99;
 }
 
 p,
@@ -75,6 +76,8 @@ img {
   padding-top: 22.5px;
   padding-bottom: 22.5px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-logo {
@@ -158,6 +161,7 @@ img {
   background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 .hero-btn {
@@ -379,6 +383,7 @@ img {
 .workers-soc-icon {
   width: 16px;
   height: 16px;
+  fill: var(--back-btn-portfolio);
 }
 
 /*---------------CUSTOMERS----------*/
@@ -405,11 +410,12 @@ img {
   gap: 24px;
 }
 
-.customers-link:hover {
+.customers-link:is(:hover, :focus) {
   border-color: #404bbf;
+  color: #404bbf;
 }
 
-.customers-link:hover .customers-icon {
+.customers-link:is(:hover, :focus) .customers-icon {
   fill: #404bbf;
 }
 
@@ -417,6 +423,7 @@ img {
   width: calc((100% - 24 * 5px) / 6);
   height: 88px;
 }
+
 .customers-link {
   width: 100%;
   height: 100%;
@@ -425,12 +432,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--cust-color);
 }
 
 .customers-icon {
   width: 104px;
   height: 56px;
   fill: #8e8f99;
+  fill: currentColor;
 }
 
 /* ---------------FOOTER------------ */
@@ -444,6 +453,7 @@ img {
   display: flex;
   align-items: baseline;
   text-align: left;
+  margin-right: 120px;
 }
 
 .footer-logo-part {
@@ -464,6 +474,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   margin-top: 17.5px;
+  margin-bottom: 16px;
 }
 
 .footer-social-part .footer-social-title {
@@ -511,6 +522,7 @@ img {
 .footer-social-icons {
   width: 24px;
   height: 24px;
+  fill: var(--back-btn-portfolio);
 }
 
 /* ---------------PORTFOLIO------------ */
