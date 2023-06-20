@@ -147,6 +147,11 @@ img {
   align-items: center;
   gap: 40px;
 }
+
+.header-logo-part {
+  margin-right: 120px;
+}
+
 /* --------------- HERO -------------- */
 
 .hero {
@@ -453,8 +458,6 @@ img {
   display: flex;
   align-items: baseline;
   text-align: left;
-  margin-right: 120px;
-  margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -479,16 +482,17 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-social-title {
+  margin-right: 120px;
+}
+
 .footer-social-part .footer-social-title {
-  margin-top: 0;
   margin-bottom: 16px;
-  margin-left: 120px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-right: 120px;
 }
 
 .footer-social-part .footer-social-list {
@@ -498,7 +502,6 @@ img {
   gap: 16px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 120px;
   padding-left: 0;
   list-style: none;
 }
@@ -516,10 +519,6 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
-}
-
-.footer-social-link > .footer-social-icons {
-  fill: var(--footer-logo-color);
 }
 
 .footer-social-icons {
